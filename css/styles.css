@@ -1,0 +1,18 @@
+h1 {
+
+	color: black;
+}
+#output {
+
+	border: 1px solid green;
+	background-color: lightblue; 
+	padding: 5px; 
+}
+
+.resultsDiv {
+	background-color: lightyellow; 
+	border: 1px solid black; 
+	padding: 5px; 
+	margin: 5px ;
+
+}
