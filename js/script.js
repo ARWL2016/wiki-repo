@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 
 
-$('button').on('click', function(){
+$('#search').on('click', function(){
 	$('.resultsDiv').remove(); 
 	input = $('input').val(); 
 	console.log(input); 
@@ -33,16 +33,16 @@ $('button').on('click', function(){
 				
 				newDiv = $(
 				"<div class ='resultsDiv'>" +
-					"<p>" + title + "</p>" + 
-			 		snippet + "<br>" +
-			 		'<a href="' + link + '" target="_blank">Open Here</a>' + 
+					"<h2>" + title + "</h2>" + 
+			 		"<p>" + snippet + " ..." + "</p>" +
+			 		'<a href="' + link + '" target="_blank">' + link + '</a>' + 
 			 		/*"<a href = 'https://en.wikipedia.org/wiki/?' target='_blank'>" + "<br>" +
 			 		"some text" + "</a>" +*/
 			  	"</div>");
-				$("#output").append(newDiv); 
+				$("#output").hide().append(newDiv); 
 
 			})
-			
+			$("#output").fadeIn(400);
 
 
 		}, 
