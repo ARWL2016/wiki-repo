@@ -1,15 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en"> 
 <head> 
-	<meta-charset="UTF8">
+	<meta charset="utf-8">
+
+	<title>Wikipedia Viewer</title>
+
 	<link rel="stylesheet" href = "css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> 
 </head> 
+
 <body> 
+	<header>
+		<div>
+			<h1>Search Wikipedia</h1> 
+		</div> 
+	</header>
 	<main>
-		<h1>Wikipedia Viewer</h1> 
 			<nav>
-				<input type = 'text' />
+				<input id='searchBox' type='text' placeholder='search'/>
 				<button id='search'>Search</button>
 				<button id='random'>Random</button>
 			</nav>
@@ -17,18 +26,7 @@
 		<div id = "output"></div> 
 	</main>
 
- 
-
-
-
-
-
-
-
-
-
-
-
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
+</html>
