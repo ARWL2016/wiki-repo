@@ -16,4 +16,4 @@ Build an app that is functionally similar to this: https://codepen.io/FreeCodeCa
 **Notes** 
 - This app uses a jQuery ajax method to call the wikipedia API
 - This project is currently unhosted
-- local repo previously named *wiki-repo*
+- local repo previously named *wiki-repo* 
