@@ -18,7 +18,7 @@ $(document).ready(function() {
 	$('#search').on('click', function() {
 		$('.resultsDiv').remove(); 
 		input = $('input').val(); 
-		console.log(input); 
+		// console.log(input); 
 
 		$.ajax(url, {
 			success: function(response) {
@@ -30,8 +30,8 @@ $(document).ready(function() {
 					let snippet = result.snippet;
 					let linkTitle = removeSpaces(title);
 					let link = wikiLink.concat(linkTitle); 
-					console.log("Link " + link); 
-					console.log(typeof(link)); 
+					// console.log("Link " + link); 
+					// console.log(typeof(link)); 
 					
 					newDiv = $(
 					"<div class ='resultsDiv'>" +
